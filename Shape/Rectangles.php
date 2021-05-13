@@ -11,11 +11,21 @@ class Rectangles implements Resizeable
 {
     protected int|float $edgeA;
     protected int|float $edgeB;
+    protected string $name;
 
-    public function __construct($edgeA, $edgeB)
+    public function __construct($name,$edgeA, $edgeB)
     {
         $this->edgeA = $edgeA;
         $this->edgeB = $edgeB;
+        $this->name = $name;
+    }
+
+    /**
+     * @return string
+     */
+    public function getName(): string
+    {
+        return $this->name;
     }
 
     /**

@@ -6,9 +6,9 @@ use JetBrains\PhpStorm\Pure;
 include "../vendor/autoload.php";
 class Squares extends Rectangles
 {
-    #[Pure] public function __construct($edgeA)
+    #[Pure] public function __construct($name,$edgeA)
     {
-        parent::__construct($edgeA, $edgeA);
+        parent::__construct($name,$edgeA, $edgeA);
 
     }
 
